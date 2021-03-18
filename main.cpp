@@ -1,3 +1,9 @@
+/**
+ * @todo Die Kommentare können eigentlich in die Readme.
+ * Möglichkeit: For Schleife noch auslagern damit es kürzer wird?
+ * Jedoch wäre das nur noch ein Auslagern um des Auslagern willens.
+ */
+
 #include <iostream>
   
 using namespace std; 
