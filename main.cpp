@@ -18,12 +18,16 @@ using namespace std;
         const std::string romanLetters[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
         const int integerValues[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
 
+
+        /**
+         * Das hier sieht hässlich aus.
+         * Könnten aber die zwei Guinness auf einen Joghurt sein
+         */
         std::string result = "";
 
         /**
          * Die 13 ist hier hart hinterlegt, ein romanLetters.size() würde nur unnötig 
          * Rechenzeit benötigen. Es ist bekannt und die Länge ist fix, nicht dynamisch.
-         * 
          */
         for (int i = 0; i < 13; ++i) {
             while(integerValueToConvert - integerValues[i] >= 0) {
