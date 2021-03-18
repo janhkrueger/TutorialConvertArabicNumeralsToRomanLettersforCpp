@@ -18,7 +18,6 @@ using namespace std;
         const std::string romanLetters[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
         const int integerValues[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
 
-
         /**
          * Das hier sieht hässlich aus.
          * Könnten aber die zwei Guinness auf einen Joghurt sein
@@ -39,6 +38,10 @@ using namespace std;
     }
 
 int main() {  
+    /**
+     * Eigentlich könnte ich hier von der Tastatur einlesen um bei einer neuen Zahl den Compile wegfallen
+     * zu lassen. Müsste ich aber mehr einbinden und für die Lösung unerheblich.
+     */
     const int integerValueToConvert = 2999;
 	std::cout << "Wert als Integer " << integerValueToConvert << " : Als römische Zíffer " << convertIntToRoman(integerValueToConvert) << std::endl;
     return 0;  
