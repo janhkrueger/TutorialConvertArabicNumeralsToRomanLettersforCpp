@@ -2,26 +2,24 @@
   
 using namespace std; 
 
-    string convertIntToRoman(int n) {
+    string convertIntToRoman(int integerValueToConvert) {
 
-        string romanLetters[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        std::string romanLetters[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
         int integerValues[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
 
-        string result = "";
+        std::string result = "";
 
-        for (int i = 0; i < 13; ++i)
-        {
-            while(n - integerValues[i] >= 0)
-            {
+        for (int i = 0; i < 13; ++i) {
+            while(integerValueToConvert - integerValues[i] >= 0) {
                 result += romanLetters[i];
-                n -= integerValues[i];
+                integerValueToConvert -= integerValues[i];
             }
         }
         return result;
     }
 
 int main() {  
-    int n = 3999;
-	cout << "Integer " << n << " : Roman " << convertIntToRoman(n) << endl;
+    int integerValueToConvert = 3999;
+	std::cout << "Wert als Integer " << integerValueToConvert << " : Als römische Zíffer " << convertIntToRoman(integerValueToConvert) << std::endl;
     return 0;  
 }
